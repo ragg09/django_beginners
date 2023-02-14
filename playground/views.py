@@ -5,8 +5,10 @@ from django.http import HttpResponse
 # takes request and return response
 # basically, views in django are request handlers and not an actual html template
 
+# actual views in django is called template, it holds the html elements
+
 
 def say_hello(request):
-    return HttpResponse("Hello, world. You're at the polls index.")
-    
+    return render(request, 'hello.html', {'name': 'RENE' })
+
  
