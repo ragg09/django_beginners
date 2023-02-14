@@ -22,4 +22,7 @@ urlpatterns = [
 
     # import url configuration from the another application urls
     path('pg/', include('playground.urls')),
+
+    # deubbing toolbar
+    path('__debug__/', include('debug_toolbar.urls')),
 ]
